@@ -1,0 +1,107 @@
+/* Global styles */
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header styles */
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+}
+
+/* Main styles */
+main {
+  margin: 2rem auto;
+  max-width: 600px;
+  padding: 1rem;
+}
+
+form {
+  display: grid;
+  gap: 1rem;
+}
+
+label {
+  font-weight: bold;
+}
+
+input, textarea {
+  border: 1px solid #ccc;
+  border-radius: 0.25rem;
+  padding: 0.5rem;
+}
+
+button[type="submit"] {
+  background-color: #333;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  padding: 0.5rem;
+}
+
+.contact-icons {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.contact-icons a {
+  margin: 0 0.5rem;
+}
+
+.contact-icons i {
+  color: #333;
+  font-size: 2rem;
+  transition: color 0.3s ease;
+}
+
+.contact-icons i:hover {
+  color: #0077b5;
+  cursor: pointer;
+}
+.contact-links a {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #fff;
+  color: #555;
+  border-radius: 4px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.contact-links a:hover {
+  background-color: #555;
+  color: #fff;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+.contact-links a:hover {
+  color: #555;
+  transition: color 0.3s ease;
+}
+form input, form textarea {
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  padding: 10px;
+  margin-bottom: 20px;
+  transition: border-color 0.3s ease;
+}
+
+form input:focus, form textarea:focus {
+  border-color: #555;
+}
+header {
+  background: linear-gradient(to bottom, #2a2a72, #1b1b4c);
+  color: #fff;
+  padding: 20px;
+}
