@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Internship Experiences</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      background-color: #000;
+      font-family: Arial, sans-serif;
+    }
+    
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 40px;
+    }
+    
+    h1 {
+      text-align: center;
+      font-size: 2.5rem;
+      margin-bottom: 40px;
+      color: #ccc;
+    }
+    
+    .experience {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: opacity 0.6s ease-in-out, transform 0.6s ease-in-out;
+    }
+    
+    .experience.loaded {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    
+    .experience:not(:last-child) {
+      margin-bottom: 40px;
+    }
+    
+    .experience h2 {
+      font-size: 1.8rem;
+      margin-bottom: 10px;
+      color: #ccc;
+    }
+    
+    .experience p {
+      margin-bottom: 5px;
+      color: #999;
+    }
+    
+    /* Add loading animation */
+    @keyframes fade-in {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+    
+    @keyframes slide-up {
+      0% {
+        transform: translateY(30px);
+      }
+      100% {
+        transform: translateY(0);
+      }
+    }
+  </style>
+  <script>
+    // Trigger the loading animation for each experience
+    window.addEventListener("DOMContentLoaded", function () {
+      var experiences = document.querySelectorAll(".experience");
+      experiences.forEach(function (experience, index) {
+        setTimeout(function () {
+          experience.classList.add("loaded");
+        }, index * 500);
+      });
+    });
+  </script>
+</head>
+<body>
+  <div class="container">
+    <h1>Internship Experiences</h1>
+    <div class="experience">
+      <h2>Data Science Intern</h2>
+      <p>Oasis Infobyte</p>
+      <p>01/2023 - 02/2023</p>
+      <p>
+        Performed tasks using data analysis and machine learning like sales
+        prediction, classification, spam detection, etc.
+      </p>
+    </div>
+    <div class="experience">
+      <h2>Web Development and Designing Intern</h2>
+      <p>Oasis Infobyte</p>
+      <p>12/2022 - 01/2023</p>
+      <p>
+        Website development and designing including tasks of creating
+        landing pages, temperature conversion website, etc.
+      </p>
+    </div>
+    <div class="experience">
+      <h2>Engineering Virtual Program</h2>
+      <p>Goldman Sachs</p>
+      <p>01/2022 - 01/2022</p>
+      <p>
+        Experience what it’s like to work in the Engineering Division at
+        Goldman Sachs. Gain skills in basic cryptography, password cracking,
+        and password best practices. Develop critical engineering skills.
+      </p>
+    </div>
+    <div class="experience">
+      <h2>Software Engineering Virtual Experience</h2>
+      <p>JP Morgan Chase and Co.</p>
+      <p>01/2022 - 01/2022</p>
+        <p>
+          Interface with a stock price data feed. Use JPMorgan Chase
+          frameworks and tools. Display data visually for traders.
+        </p>
+      </div>
+    </div>
+  </body>
+  </html>
+  

@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Education History</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      background-color: #3c3c3c;
+      color: #fff;
+    }
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    h1 {
+      text-align: center;
+      font-size: 4rem;
+      margin-bottom: 40px;
+      text-shadow: 2px 2px 4px #000;
+      letter-spacing: 4px;
+    }
+    .level {
+      display: flex;
+      align-items: center;
+      margin-bottom: 60px;
+      position: relative;
+    }
+    .level:before {
+      content: "";
+      display: block;
+      position: absolute;
+      left: -20px;
+      top: 0;
+      bottom: 0;
+      width: 80px;
+      background-color: #ffcb0f;
+      box-shadow: 1px 1px 2px #000;
+      animation: slide 1s ease-out infinite alternate;
+    }
+    .level:last-child:before {
+      content: "";
+      display: block;
+      position: absolute;
+      left: -20px;
+      top: 0;
+      bottom: 0;
+      width: 80px;
+      background-color: #ffcb0f;
+      box-shadow: 1px 1px 2px #000;
+      animation: slide 1s ease-out infinite alternate;
+    }
+    .level:after {
+      content: "";
+      display: block;
+      position: absolute;
+      left: 20px;
+      top: 0;
+      bottom: 0;
+      width: 4px;
+      background-color: #ffcb0f;
+      margin: auto;
+    }
+    .level:last-child:after {
+      content: "";
+      display: block;
+      position: absolute;
+      left: 20px;
+      top: 0;
+      bottom: 0;
+      width: 4px;
+      background-color: #ffcb0f;
+      margin: auto;
+    }
+    .level .content {
+      background-color: #1d1d1d;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 2px 2px 5px #000;
+      margin-left: 80px;
+      position: relative;
+      animation: slide-in 1s ease-out;
+    }
+    .level .content h2 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+      text-shadow: 1px 1px 2px #000;
+      letter-spacing: 2px;
+    }
+    .level .content p {
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+      letter-spacing: 1px;
+    }
+
+    /* Add animation for text */
+    .animated-text {
+      position: relative;
+      overflow: hidden;
+      display: inline-block;
+    }
+    .animated-text:before {
+      content: attr(data-text);
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      color: #ffcb0f;
+      transform: translateY(100
+      /* Add animation for text */
+      .animated-text {
+        position: relative;
+        overflow: hidden;
+        display: inline-block;
+      }
+      .animated-text:before {
+        content: attr(data-text);
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        color: #ffcb0f;
+        transform: translateY(100%);
+        animation: slide-up 1s ease-in-out infinite;
+      }
+
+      @keyframes slide-up {
+        0% {
+          transform: translateY(100%);
+        }
+        50% {
+          transform: translateY(0);
+        }
+        100% {
+          transform: translateY(-100%);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>My Education History</h1>
+      <div class="level">
+        <div class="content">
+          <h2 >B.Tech(Computer Science & Engineering)</h2>
+          <h4>(2020-2024)</h4>
+          <h3>Pranveer Singh Institute Of Technology</h3>
+          <p>Current GPA: 7.88</p>
+        </div>
+      </div>
+      <div class="level">
+        <div class="content">
+<h2>Intermediate (UP Board)</h2>
+<p>(2019-2020)</p>
+<p>Onkareshwar Saraswati Vidya Niketan Inter College</p>
+<p>Percentage: 81.4</p>
+</div>
+</div>
+<div class="level">
+<div class="content">
+<h2>High School (UP Board)</h2>
+<p>(2017-2018)</p>
+<p>Onkareshwar Saraswati Vidya Niketan Inter College</p>
+<p>Percentage: 90.3</p>
+</div>
+</div>
+</div><div class="container">
+  <h1>Certifications</h1>
+  <div class="level">
+    <div class="content">
+      <h2>Programming Fundamentals Using Python (Part 1)</h2>
+      <p>Infosys</p>
+    </div>
+  </div>
+  <div class="level">
+    <div class="content">
+      <h2>Programming Fundamentals Using Python (Part 2)</h2>
+      <p>Infosys</p>
+    </div>
+  </div>
+  <div class="level">
+    <div class="content">
+      <h2>Python For Data Science</h2>
+      <p>Infosys</p>
+    </div>
+  </div>
+  <div class="level">
+    <div class="content">
+      <h2>Google Data Analytics Professional Certificate</h2>
+      <p>Google</p>
+    </div>
+  </div>
+  <div class="level">
+    <div class="content">
+      <h2>Programming Foundations with JavaScript, HTML and CSS</h2>
+      <p>Duke University</p>
+    </div>
+  </div>
+  <div class="level">
+    <div class="content">
+      <h2>Python 101 for Data Science</h2>
+      <p>IBM</p>
+    </div>
+  </div>
+  <div class="level">
+    <div class="content">
+      <h2>The Arduino Platform And C Programming</h2>
+      <p>Coursera</p>
+    </div>
+  </div>
+  <div class="level">
+    <div class="content">
+      <h2>Introduction to Data Science</h2>
+      <p>Infosys</p>
+    </div>
+  </div>
+</div>
+  </body>
+</html>

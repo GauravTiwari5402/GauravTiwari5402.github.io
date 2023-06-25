@@ -1,0 +1,81 @@
+.game-container {
+    width: 100%;
+    height: 400px;
+    overflow-x: scroll;
+    position: relative;
+  }
+  
+  .game-background {
+    width: 100%;
+    height: 100%;
+    background: url('https://image.freepik.com/free-vector/seamless-horizontal-game-background_1284-23461.jpg');
+    background-repeat: repeat-x;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  
+  .game-level {
+    width: 1200px;
+    height: 100%;
+    position: relative;
+  }
+  
+  .game-ground {
+    width: 100%;
+    height: 50px;
+    background: url('https://i.imgur.com/d1OhGxh.png');
+    background-repeat: repeat-x;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    animation: ground 10s linear infinite;
+  }
+  
+  .game-blocks {
+    width: 800px;
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+  }
+  
+  .game-block {
+    width: 50px;
+    height: 50px;
+    background: url('https://i.imgur.com/16RbHwM.png');
+    background-repeat: no-repeat;
+    background-position: -24px -48px;
+    float: left;
+    margin-right: 20px;
+    animation: blocks 10s linear infinite;
+  }
+  
+  .game-player {
+    width: 50px;
+    height: 50px;
+    background: url('https://i.imgur.com/XUO9L9d.png');
+    background-repeat: no-repeat;
+    background-position: -24px -48px;
+    position: absolute;
+    bottom: 50px;
+    left: 100px;
+    z-index: 3;
+    animation: player 10s linear infinite;
+  }
+  
+  .game-education {
+    width: 400px;
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space
+  
